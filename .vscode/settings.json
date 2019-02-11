@@ -1,0 +1,13 @@
+{
+   "editor.rulers": [
+       80
+   ],
+   "editor.fontSize": 13,
+"window.zoomLevel": 0,
+   "editor.tabSize": 4,
+   "explorer.confirmDelete": false,
+   "terminal.integrated.fontSize": 13,
+"workbench.startupEditor": "welcomePage",
+"python.pythonPath": "/usr/bin/python3",
+"python.linting.pylintEnabled": false
+}
