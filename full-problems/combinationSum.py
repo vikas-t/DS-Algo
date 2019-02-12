@@ -30,13 +30,15 @@ def sol(arr, n, t, subRes=[]):
             subRes.append(arr[n-1])
             tc = tc - arr[n-1]
             sol(arr, n-1, tc, subRes)
+    # We divide the number by the total to know how many times the number can be included
+    # This way we do not have to check the inclusion of the number for the every other
+    # number in the rest of the set. This improves the efficiency
         
         for i in range(t//arr[n-1]):
             subRes.pop()
+        # Remove all inclusions of the number
         
-        sol(arr, n-1, t, subRes)
-    else:
-        sol(arr, n-1, t, subRes)
+    sol(arr, n-1, t, subRes)
     
     
 r = []    
