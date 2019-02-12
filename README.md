@@ -1,2 +1,2 @@
 # DS-Algo
-Data structure and Algorithms programs 
+Data Structure and Algorithm practice problems 
