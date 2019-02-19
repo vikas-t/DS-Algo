@@ -28,6 +28,9 @@ class Node:
         self.next = next
 
 def segregate(head, n):
+    """
+    The idea here is to keep moving the odd nodes at the end.
+    """
     ptr = head
     
     while ptr.next:

@@ -30,7 +30,7 @@ class LinkedList:
             tmp = tmp.right
 
 def flatten(root):
-    
+    #ToDo
 
 # Driver code
 # We intend to create the following linked list

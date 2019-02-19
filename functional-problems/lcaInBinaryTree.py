@@ -17,6 +17,9 @@ def findLCA(root, n1, n2):
     return None
     
 def nodeInTree(root, k):
+    """
+    Checks if the node exists in the tree or not
+    """
     if root == None:
         return False
     
@@ -26,6 +29,12 @@ def nodeInTree(root, k):
     return False
 
 def getLCA(root, a, b, v):
+    """
+    The method assumes that keys are present in Binary Tree. 
+    If one key is present and other is absent, then it returns the present 
+    key as LCA (Ideally should have returned NULL). To overcome this 
+    we use findLCA() which is a wrapper over this
+    """
     if root == None:
         return None
     
