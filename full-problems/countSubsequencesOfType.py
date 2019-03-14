@@ -40,11 +40,14 @@ def sol(s, n, res=""):
 """
 We traverse given string. For every character encounter, we do following:
 
-1) Initialize counts of different subsequences caused by different combination of ‘a’. Let this count be aCount.
+1) Initialize counts of different subsequences caused by different 
+   combination of ‘a’. Let this count be aCount.
 
-2) Initialize counts of different subsequences caused by different combination of ‘b’. Let this count be bCount.
+2) Initialize counts of different subsequences caused by different 
+   combination of ‘b’. Let this count be bCount.
 
-3) Initialize counts of different subsequences caused by different combination of ‘c’. Let this count be cCount.
+3) Initialize counts of different subsequences caused by different 
+   combination of ‘c’. Let this count be cCount.
 
 4) Traverse all characters of given string. Do following for current character s[i]
     If current character is ‘a’, then there are following possibilities :
