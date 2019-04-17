@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # https://practice.geeksforgeeks.org/problems/rotten-oranges/0
 
-def isRotten(mat, r, c, x, y):
+def isFresh(mat, r, c, x, y):
     if 0 <= x < r and 0 <= y < c:
         if mat[x][y] == 1:
             return True
@@ -25,7 +25,7 @@ def sol(mat, r, c):
         x, y, t = q.pop(0)
         for adj in [(0, -1), (0, 1), (1, 0), (-1, 0)]:
             nx, ny = x+adj[0], y+adj[1]
-            if isRotten(mat, r, c, nx, ny):
+            if isFresh(mat, r, c, nx, ny):
                 mat[nx][ny] = 2
                 q.append((nx, ny, t+1))
     
