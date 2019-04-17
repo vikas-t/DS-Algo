@@ -17,4 +17,3 @@ def sol(arr, n):
             mnth = 1
         res = max(res, mxth)
     return res
-    
